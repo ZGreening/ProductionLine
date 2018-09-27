@@ -7,7 +7,7 @@ public abstract class Product implements Item
 {
     //Variables
     private static int currentProductionNumber;     //The number of the next product to be made
-    private String manufacturer;                    //Override default manufacturer
+    private String manufacturer=Item.manufacturer;  //Override default manufacturer
     private int serialNumber;                       //The number of this product
     private String name;
     private Date manufacturedOn;
