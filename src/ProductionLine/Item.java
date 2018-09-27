@@ -5,13 +5,13 @@ import java.util.Date;
 
 public interface Item {
     //Variables
-    final String manufacturer="OracleProduction";   //Set as default manufacturer
+    public final String manufacturer="OracleProduction";   //Set as default manufacturer
 
 
     //Method headers
-    void setProductionNumber(int number);
-    void setName(String name);
-    String getName();
-    Date getManufactureDate();
-    int getSerialNumber();
+    public void setProductionNumber(int number);
+    public void setName(String name);
+    public String getName();
+    public Date getManufactureDate();
+    public int getSerialNumber();
 }
