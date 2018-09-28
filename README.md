@@ -17,6 +17,8 @@ will only implement a concrete class for music and movie players.Your task
 is to create a flexible structure that could be used in any production line. 
 This structure would then allow easy modification to handle different products.
 
-As of this point (September 28, 2018) the interfaces Item and MultimediaControl, 
-the abstract class Product, and the enumerator ItemType have been created,
-documented, and added to the project.
+As of this point (September 28, 2018) the interfaces "Item" and "MultimediaControl", 
+the abstract class "Product", and the enumerator "ItemType" have been created,
+documented, and added to the project. These will serve as a modular base for 
+continuing work on the project and as well as keeping the flexibility that is
+a requirement for this project.
