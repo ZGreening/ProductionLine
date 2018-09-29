@@ -19,7 +19,7 @@ public abstract class Product implements Item {
     private int serialNumber;                           //The number of this product
     private String name;
     private final Date manufacturedOn;
-    //End Variables
+    ///////////////
 
 
     //SetGets
@@ -35,9 +35,9 @@ public abstract class Product implements Item {
         return name;
     }
 
-    //Returns a new date to avoid mutability of date manufactured
+    //Returns a new date to avoid mutability of the date manufactured instance variable
     public Date getManufactureDate() {
-        Date date=new Date();
+        Date date = new Date();
         date.setTime(manufacturedOn.getTime());
         return date;
     }
@@ -45,8 +45,10 @@ public abstract class Product implements Item {
     public int getSerialNumber() {
         return serialNumber;
     }
-    //End SetGets
+    ///////////////
 
+
+    //Constructors
     /**
      * Constructor to create a product and initialize its name, serial number
      * and date manufactured on. Increments the class variable
@@ -62,8 +64,10 @@ public abstract class Product implements Item {
         Product.currentProductionNumber++;        //Increment class variable for next product
         manufacturedOn = new Date();
     }
+    ///////////////
 
 
+    //Methods
     /**
      * Overrides toString to return the manufacture, serial number, Date manufactured
      * on, and the name of the product
@@ -81,4 +85,5 @@ public abstract class Product implements Item {
         return "Manufacturer\t: " + manufacturer + "\nSerial Number\t: " + serialNumber +
                 "\nDate\t\t\t: " + manufacturedOn + "\nName\t\t\t: " + name;
     }
+    ///////////////
 }

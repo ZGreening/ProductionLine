@@ -15,7 +15,9 @@ import java.util.Date;
 public interface Item {
     public final String manufacturer = "OracleProduction";   //Set as default manufacturer
 
-    public static void setProductionNumber(int number) {} //Must provide body for static function
+    //Must provide body for static function
+    public static void setProductionNumber(int number) {
+    }
 
     public void setName(String name);
 
