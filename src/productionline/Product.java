@@ -7,7 +7,8 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
-package productionline;
+package ProductionLine;
+
 
 import java.util.Date;
 
@@ -35,11 +36,7 @@ public abstract class Product implements Item {
     return name;
   }
 
-  /**
-   * Returns a new date to avoid mutability of the date manufactured instance variable.
-   *
-   * @return date manufactured on
-   */
+  //Returns a new date to avoid mutability of the date manufactured instance variable
   public Date getManufactureDate() {
     Date date = new Date();
     date.setTime(manufacturedOn.getTime());
@@ -73,21 +70,18 @@ public abstract class Product implements Item {
 
   /**
    * Overrides toString to return the manufacture, serial number, Date manufactured on, and the name
-   * of the product.
+   * of the product
    *
    * @return returns manufacturer, serial number, Date manufactured on, and name of product in
-   *     format:
-   *        Manufacturer    : OracleProduction
-   *        Serial Number   : 012345678
-   *        Date            : Fri Sep 28 10:53:30 EDT 2018
-   *        Name            : Orange
+   * format:
+   * <p>
+   * Manufacturer    : OracleProduction Serial Number   : 012345678 Date            : Fri Sep 28
+   * 10:53:30 EDT 2018 Name            : Orange
    */
   @Override
   public String toString() {
-    return "Manufacturer\t: " + manufacturer
-        + "\nSerial Number\t: " + serialNumber
-        + "\nDate\t\t\t: " + manufacturedOn
-        + "\nName\t\t\t: " + name;
+    return "Manufacturer\t: " + manufacturer + "\nSerial Number\t: " + serialNumber
+        + "\nDate\t\t\t: " + manufacturedOn + "\nName\t\t\t: " + name;
   }
   ///////////////
 }

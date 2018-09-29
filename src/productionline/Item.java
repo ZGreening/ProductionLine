@@ -7,23 +7,23 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
-package ProductionLine;
-
+package productionline;
 
 import java.util.Date;
 
 public interface Item {
-    public final String manufacturer = "OracleProduction";   //Set as default manufacturer
 
-    //Must provide body for static function
-    public static void setProductionNumber(int number) {
-    }
+  public final String manufacturer = "OracleProduction";   //Set as default manufacturer
 
-    public void setName(String name);
+  //Must provide body for static function
+  public static void setProductionNumber(int number) {
+  }
 
-    public String getName();
+  public void setName(String name);
 
-    public Date getManufactureDate();
+  public String getName();
 
-    public int getSerialNumber();
+  public Date getManufactureDate();
+
+  public int getSerialNumber();
 }

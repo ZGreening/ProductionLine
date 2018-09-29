@@ -7,18 +7,15 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
-package ProductionLine;
+package productionline;
 
 
 public enum ItemType {
-    AUDIO("AU"),
-    VISUAL("VI"),
-    AUDIO_MOBILE("AM"),
-    VISUAL_MOBILE("VM");
+  AUDIO("AU"), VISUAL("VI"), AUDIO_MOBILE("AM"), VISUAL_MOBILE("VM");
 
-    String code;                    //Letter code indicating the item type
+  String code;                    //Letter code indicating the item type
 
-    ItemType(String code) {
-        this.code = code;
-    }
+  ItemType(String code) {
+    this.code = code;
+  }
 }
