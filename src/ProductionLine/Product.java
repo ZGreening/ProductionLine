@@ -12,7 +12,7 @@ package ProductionLine;
 
 import java.util.Date;
 
-public class Product implements Item {
+public abstract class Product implements Item {
     //Variables
     private static int currentProductionNumber;         //The number of the next product to be made
     private String manufacturer = Item.manufacturer;    //Initialize manufacturer to default
