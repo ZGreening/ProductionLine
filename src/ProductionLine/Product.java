@@ -1,5 +1,4 @@
 ///////////////////////////////////////////////////////////////////////////////
-//
 // File: Product.java
 // By:   Greening, Zachary
 // Date: September 28, 2018
@@ -13,18 +12,19 @@ package ProductionLine;
 
 import java.util.Date;
 
-public abstract class Product implements Item {
+public class Product implements Item {
     //Variables
-    private static int currentProductionNumber;     //The number of the next product to be made
-    private String manufacturer = Item.manufacturer;  //Initialize manufacturer to default
-    private int serialNumber;                       //The number of this product
+    private static int currentProductionNumber;         //The number of the next product to be made
+    private String manufacturer = Item.manufacturer;    //Initialize manufacturer to default
+    private int serialNumber;                           //The number of this product
     private String name;
-    private Date manufacturedOn;
+    private final Date manufacturedOn;
+    //End Variables
 
 
     //SetGets
-    public void setProductionNumber(int number) {
-        currentProductionNumber = number;
+    public static void setProductionNumber(int number) {
+        Product.currentProductionNumber = number;
     }
 
     public void setName(String name) {
@@ -35,27 +35,31 @@ public abstract class Product implements Item {
         return name;
     }
 
+    //Returns a new date to avoid mutability of date manufactured
     public Date getManufactureDate() {
-        return manufacturedOn;
+        Date date=new Date();
+        date.setTime(manufacturedOn.getTime());
+        return date;
     }
 
     public int getSerialNumber() {
         return serialNumber;
     }
-
+    //End SetGets
 
     /**
      * Constructor to create a product and initialize its name, serial number
      * and date manufactured on. Increments the class variable
      * currentProductionNumber to prepare it for the next, not yet made,
-     * product
+     * product. ###FindBugs-IDEA reports this, but since it is a constructor,
+     * I have chosen simply to document and leave it###
      *
      * @param name the name of the product being created
      */
     public Product(String name) {
         this.name = name;
         serialNumber = currentProductionNumber;   //Use the number of current product
-        currentProductionNumber++;              //Increment for next product
+        Product.currentProductionNumber++;        //Increment class variable for next product
         manufacturedOn = new Date();
     }
 
