@@ -84,10 +84,9 @@ public abstract class Product implements Item {
    */
   @Override
   public String toString() {
-    return "Manufacturer\t: " + manufacturer
-        + "\nSerial Number\t: " + serialNumber
-        + "\nDate\t\t\t: " + manufacturedOn
-        + "\nName\t\t\t: " + name;
+    return "Manufacturer         : " + manufacturer + "\n"
+        +  "Serial Number        : " + serialNumber +"\n"
+        +  "Date                 : " + manufacturedOn + "\n"
+        +  "Name                 : " + name;
   }
-  ///////////////
 }
