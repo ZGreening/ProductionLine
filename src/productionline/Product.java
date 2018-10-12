@@ -76,17 +76,14 @@ public abstract class Product implements Item {
    * of the product.
    *
    * @return returns manufacturer, serial number, Date manufactured on, and name of product in
-   *     format:
-   *        Manufacturer    : OracleProduction
-   *        Serial Number   : 012345678
-   *        Date            : Fri Sep 28 10:53:30 EDT 2018
-   *        Name            : Orange
+   * format: Manufacturer    : OracleProduction Serial Number   : 012345678 Date            : Fri
+   * Sep 28 10:53:30 EDT 2018 Name            : Orange
    */
   @Override
   public String toString() {
     return "Manufacturer         : " + manufacturer + "\n"
-        +  "Serial Number        : " + serialNumber +"\n"
-        +  "Date                 : " + manufacturedOn + "\n"
-        +  "Name                 : " + name;
+        + "Serial Number        : " + serialNumber + "\n"
+        + "Date                 : " + manufacturedOn + "\n"
+        + "Name                 : " + name;
   }
 }
