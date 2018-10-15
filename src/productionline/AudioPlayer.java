@@ -9,6 +9,7 @@
 package productionline;
 
 public class AudioPlayer extends Product implements MultimediaControl {
+
   private String audioSpecification;
   private ItemType mediaType = ItemType.AUDIO;      //Initialize here since type is always audio
 

@@ -13,14 +13,12 @@ import com.sun.org.apache.xpath.internal.operations.Mult;
 
 public class MultimediaControlDriver {
 
-  public static void testMultimediaControlArray()
-  {
-    MultimediaControl[] devices={new MoviePlayer("ipad",
+  public static void testMultimediaControlArray() {
+    MultimediaControl[] devices = {new MoviePlayer("ipad",
         new Screen("1366x768",60,15), MonitorType.LCD),
-        new AudioPlayer("ipod","wav")};
+        new AudioPlayer("ipod", "wav")};
 
-    for(MultimediaControl device : devices)
-    {
+    for (MultimediaControl device : devices) {
       System.out.println(device);
       System.out.println();
       device.next();

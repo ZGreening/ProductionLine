@@ -8,16 +8,16 @@
 
 package productionline;
 
-public class MoviePlayer extends Product implements MultimediaControl{
+public class MoviePlayer extends Product implements MultimediaControl {
+
   private Screen screen;
   private MonitorType monitorType;
 
 
-  public MoviePlayer(String name, Screen screen, MonitorType monitorType)
-  {
+  public MoviePlayer(String name, Screen screen, MonitorType monitorType) {
     super(name);
-    this.screen=screen;
-    this.monitorType=monitorType;
+    this.screen = screen;
+    this.monitorType = monitorType;
   }
 
   @Override
@@ -41,9 +41,9 @@ public class MoviePlayer extends Product implements MultimediaControl{
   }
 
   @Override
-  public String toString(){
-    return super.toString()+"\n"
-        +screen+"\n"
-        +"Monitor Type : "+monitorType;
+  public String toString() {
+    return super.toString() + "\n"
+        + screen + "\n"
+        + "Monitor Type : " + monitorType;
   }
 }
