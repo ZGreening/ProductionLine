@@ -3,26 +3,24 @@
 // By:   Greening, Zachary
 // Date: October 12, 2018
 // Description: A driver class for AudioPlayer
-//
 ///////////////////////////////////////////////////////////////////////////////
 
 package productionline;
 
 public class AudioPlayerDriver {
 
-  public static void main(String[] args) {
-    AudioPlayer ipod = new AudioPlayer("My Ipod", "Song 1");
-    System.out.println(ipod);
+  public static void testAudioPlayer() {
+    AudioPlayer ipod1 = new AudioPlayer("My Ipod", "Song 1");
 
-    System.out.println("");
+    //Test toString Method
+    System.out.println(ipod1);
 
-    ipod.play();
-    ipod.stop();
-    ipod.previous();
-    ipod.next();
+    System.out.println();     //empty line
 
-    System.out.println("");
-
-    System.out.println(ipod);
+    //Test other methods of type AudioPlayer
+    ipod1.play();
+    ipod1.stop();
+    ipod1.previous();
+    ipod1.next();
   }
 }

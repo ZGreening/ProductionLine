@@ -1,3 +1,11 @@
+///////////////////////////////////////////////////////////////////////////////
+// File: Screen.java
+// By:   Greening, Zachary
+// Date: October 15, 2018
+// Description: A concrete class representing a screen, which is a part of
+//    video playing devices.
+///////////////////////////////////////////////////////////////////////////////
+
 package productionline;
 
 public class Screen implements ScreenSpec {
@@ -30,8 +38,8 @@ public class Screen implements ScreenSpec {
 
   @Override
   public String toString() {
-    return "Resolution          : " + resolution + "\n" +
-        "Refresh Rate        : " + refreshRate + "\n" +
-        "Response Time       : " + responseTime;
+    return "Resolution : " + resolution + "\n"
+        + "Refresh Rate : " + refreshRate + "\n"
+        + "Response Time : " + responseTime;
   }
 }

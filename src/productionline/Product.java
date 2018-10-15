@@ -4,7 +4,6 @@
 // Date: September 28, 2018
 // Description: A class that implements interface item that has general
 //      attributes and methods relating to a product
-//
 ///////////////////////////////////////////////////////////////////////////////
 
 package productionline;
@@ -13,16 +12,12 @@ import java.util.Date;
 
 public abstract class Product implements Item {
 
-  //Variables
   private static int currentProductionNumber;         //The number of the next product to be made
-  private String manufacturer = Item.manufacturer;    //Initialize manufacturer to default
+  private String manufacturer;                        //Initialize manufacturer to default
   private int serialNumber;                           //The number of this product
   private String name;
   private final Date manufacturedOn;
-  ///////////////
 
-
-  //SetGets
   public static void setProductionNumber(int number) {
     Product.currentProductionNumber = number;
   }
@@ -49,9 +44,6 @@ public abstract class Product implements Item {
   public int getSerialNumber() {
     return serialNumber;
   }
-  ///////////////
-
-  //Constructors
 
   /**
    * Constructor to create a product and initialize its name, serial number and date manufactured
@@ -63,27 +55,23 @@ public abstract class Product implements Item {
    */
   public Product(String name) {
     this.name = name;
-    serialNumber = currentProductionNumber;   //Use the number of current product
-    Product.currentProductionNumber++;        //Increment class variable for next product
-    manufacturedOn = new Date();
+    this.manufacturer = Item.manufacturer;
+    this.serialNumber = currentProductionNumber;   //Use the number of current product
+    Product.currentProductionNumber++;             //Increment class variable for next product
+    this.manufacturedOn = new Date();
   }
-  ///////////////
-
-  //Methods
 
   /**
    * Overrides toString to return the manufacture, serial number, Date manufactured on, and the name
    * of the product.
    *
-   * @return returns manufacturer, serial number, Date manufactured on, and name of product in
-   * format: Manufacturer    : OracleProduction Serial Number   : 012345678 Date            : Fri
-   * Sep 28 10:53:30 EDT 2018 Name            : Orange
+   * @return returns manufacturer, serial number, Date manufactured on, and name of product.
    */
   @Override
   public String toString() {
-    return "Manufacturer         : " + manufacturer + "\n"
-        + "Serial Number        : " + serialNumber + "\n"
-        + "Date                 : " + manufacturedOn + "\n"
-        + "Name                 : " + name;
+    return "Manufacturer : " + manufacturer + "\n"
+        + "Serial Number : " + serialNumber + "\n"
+        + "Date : " + manufacturedOn + "\n"
+        + "Name : " + name;
   }
 }

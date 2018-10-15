@@ -4,7 +4,6 @@
 // Date: September 28, 2018
 // Description: An interface with a default manufacturer and basic methods
 //      relating to an Item
-//
 ///////////////////////////////////////////////////////////////////////////////
 
 package productionline;

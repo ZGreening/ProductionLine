@@ -4,7 +4,6 @@
 // Date: September 28, 2018
 // Description: An enumerator for the class of item (ie a type of audio for
 //      music).
-//
 ///////////////////////////////////////////////////////////////////////////////
 
 package productionline;

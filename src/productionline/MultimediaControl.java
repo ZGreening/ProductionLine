@@ -3,7 +3,6 @@
 // By:   Greening, Zachary
 // Date: September 28, 2018
 // Description: An interface with basic methods for a multimedia device
-//
 ///////////////////////////////////////////////////////////////////////////////
 
 package productionline;

@@ -3,7 +3,6 @@
 // By:   Greening, Zachary
 // Date: October 12, 2018
 // Description: The driver class for Production Line application
-//
 ///////////////////////////////////////////////////////////////////////////////
 
 package productionline;
@@ -18,7 +17,9 @@ public class Main extends Application {
   }
 
   public static void main(String[] args) {
-    launch(args);
+    //AudioPlayerDriver.testAudioPlayer();
+    ScreenDriver.testScreen();
+    //launch(args);
   }
 }
 
