@@ -18,7 +18,9 @@ public class Main extends Application {
 
   public static void main(String[] args) {
     //AudioPlayerDriver.testAudioPlayer();
-    ScreenDriver.testScreen();
+    //ScreenDriver.testScreen();
+    //MoviePlayerDriver.testMoviePlayer();
+    MultimediaControlDriver.testMultimediaControlArray();
     //launch(args);
   }
 }
