@@ -8,6 +8,7 @@
 
 package productionline;
 
+import java.util.Comparator;
 import java.util.Date;
 
 public abstract class Product implements Item {
@@ -73,5 +74,13 @@ public abstract class Product implements Item {
         + "Serial Number : " + serialNumber + "\n"
         + "Date : " + manufacturedOn + "\n"
         + "Name : " + name;
+  }
+
+  public static class SortByName implements Comparator<Product>{
+
+    @Override
+    public int compare(Product o1, Product o2) {
+      return o1.name.compareTo(o2.name);
+    }
   }
 }
