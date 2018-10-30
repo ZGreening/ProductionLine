@@ -9,7 +9,8 @@
 package productionline;
 
 import java.util.ArrayList;
-import productionline.Product.SortByName;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class CollectionDemonstrationDriver {
 
@@ -22,7 +23,7 @@ public class CollectionDemonstrationDriver {
     System.out.println(arrayList);
     System.out.println();
 
-    arrayList.sort(new SortByName());
+    Collections.sort(arrayList, Comparator.comparing(Product::getName));
 
     System.out.println(arrayList);
   }

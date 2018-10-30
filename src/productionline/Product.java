@@ -75,24 +75,4 @@ public abstract class Product implements Item {
         + "Date : " + manufacturedOn + "\n"
         + "Name : " + name;
   }
-
-  /**
-   * Find bugs lists this class implementing Comparator without serialization as bad practice. For
-   * the purposes of this project, since serialization is not needed, this bug has been ignored.
-   */
-  public static class SortByName implements Comparator<Product> {
-
-    /**
-     * Overriden function from interface Comparator to allow for the Collections.sort to sort
-     * alphabetically by name.
-     *
-     * @param o1 the first product to sort alphabetically
-     * @param o2 the second product to sort alphabetically
-     * @return returns negative if order needs to be switched
-     */
-    @Override
-    public int compare(Product o1, Product o2) {
-      return o1.name.compareTo(o2.name);
-    }
-  }
 }

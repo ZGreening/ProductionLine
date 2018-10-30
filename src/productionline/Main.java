@@ -9,9 +9,10 @@ package productionline;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 import javafx.application.Application;
 import javafx.stage.Stage;
-import productionline.Product.SortByName;
 
 public class Main extends Application {
 
@@ -26,7 +27,7 @@ public class Main extends Application {
     arrayList = testCollection();
 
     print(arrayList);
-    arrayList.sort(new SortByName());
+    Collections.sort(arrayList, Comparator.comparing(Product::getName));
     print(arrayList);
 
     //productionline.AudioPlayerDriver.testAudioPlayer();
