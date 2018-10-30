@@ -2,13 +2,16 @@
 // File: ScreenDriver.java
 // By:   Greening, Zachary
 // Date: October 12, 2018
-// Description: A driver class for class Screen
+// Description: A driver class for class productionline.Screen
 ///////////////////////////////////////////////////////////////////////////////
 
 package productionline;
 
 public class ScreenDriver {
 
+  /**
+   * A driver class to test the functionality of the testScreen class.
+   */
   public static void testScreen() {
     Screen screen = new Screen("800x600", 60, 98);
 

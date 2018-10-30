@@ -12,6 +12,12 @@ import java.util.ArrayList;
 import productionline.Product.SortByName;
 
 public class CollectionDemonstrationDriver {
+
+  /**
+   * A test driver class for testing the printing and sorting of an arrayList of Products.
+   *
+   * @param arrayList list of products to print and sort
+   */
   public static void testCollectionSort(ArrayList arrayList) {
     System.out.println(arrayList);
     System.out.println();

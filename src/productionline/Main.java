@@ -15,10 +15,11 @@ import productionline.Product.SortByName;
 
 public class Main extends Application {
 
-  @Override
-  public void start(Stage primaryStage) throws Exception {
-  }
-
+  /**
+   * Production line driver class main.
+   *
+   * @param args String arguments
+   */
   public static void main(String[] args) {
     ArrayList<Product> arrayList;
 
@@ -28,14 +29,19 @@ public class Main extends Application {
     arrayList.sort(new SortByName());
     print(arrayList);
 
-    //AudioPlayerDriver.testAudioPlayer();
-    //ScreenDriver.testScreen();
-    //MoviePlayerDriver.testMoviePlayer();
-    //MultimediaControlDriver.testMultimediaControlArray();
+    //productionline.AudioPlayerDriver.testAudioPlayer();
+    //productionline.ScreenDriver.testScreen();
+    //productionline.MoviePlayerDriver.testMoviePlayer();
+    //productionline.MultimediaControlDriver.testMultimediaControlArray();
     //launch(args);
   }
 
-  public static <T> T testCollection() {
+  /**
+   * Creates and returns an array list of Products.
+   *
+   * @return arrayList of Products
+   */
+  public static ArrayList testCollection() {
 
     AudioPlayer a1 = new AudioPlayer("iPod Mini", "MP3");
     AudioPlayer a2 = new AudioPlayer("Walkman", "WAV ");
@@ -50,12 +56,22 @@ public class Main extends Application {
     products.add(a2);
     products.add(m1);
     products.add(m2);
-    return (T) products;
+    return products;
   }
 
+  /**
+   * A generic methed that prints all items in any collection sent to it.
+   *
+   * @param collection the collection of items to be printed
+   * @param <T> the data type of the collection to be printed
+   */
   public static <T> void print(Collection<T> collection) {
     for (T product : collection) {
       System.out.println(product);
     }
+  }
+
+  @Override
+  public void start(Stage primaryStage) throws Exception {
   }
 }

@@ -3,7 +3,7 @@
 // By:   Greening, Zachary
 // Date: September 28, 2018
 // Description: An interface with a default manufacturer and basic methods
-//      relating to an Item
+//      relating to an productionline.Item
 ///////////////////////////////////////////////////////////////////////////////
 
 package productionline;
@@ -18,9 +18,9 @@ public interface Item {
   public static void setProductionNumber(int number) {
   }
 
-  public void setName(String name);
-
   public String getName();
+
+  public void setName(String name);
 
   public Date getManufactureDate();
 

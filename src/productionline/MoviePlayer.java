@@ -1,5 +1,5 @@
 ///////////////////////////////////////////////////////////////////////////////
-// File: MoviePlayer.java
+// File: productionline.MoviePlayer.java
 // By:   Greening, Zachary
 // Date: October 15, 2018
 // Description: A concrete class that represents a movie player which has
@@ -14,6 +14,13 @@ public class MoviePlayer extends Product implements MultimediaControl {
   private MonitorType monitorType;
 
 
+  /**
+   * Constructor for the class productionline.MoviePlayer.
+   *
+   * @param name the name of the product
+   * @param screen an object of a class that has data about the screen
+   * @param monitorType the type of monitor (ie LCD, LED)
+   */
   public MoviePlayer(String name, Screen screen, MonitorType monitorType) {
     super(name);
     this.screen = screen;
