@@ -1,5 +1,6 @@
-# ProductionLine --Alpha 1
+# ProductionLine --Beta 1
 # September 28, 2018
+# Updated October 32, 2018
 # By Zachary Greening
 
 This project comes from the Oracle Academy and is for educational purposes.
@@ -17,8 +18,14 @@ will only implement a concrete class for music and movie players.Your task
 is to create a flexible structure that could be used in any production line. 
 This structure would then allow easy modification to handle different products.
 
-As of this point (September 28, 2018) the interfaces "productionline.Item" and "productionline.MultimediaControl", 
+Steps 1-3 of JP instructions
+As of September 28, 2018, the interfaces "productionline.Item" and "productionline.MultimediaControl", 
 the abstract class "productionline.Product", and the enumerator "productionline.ItemType" have been created,
 documented, and added to the project. These will serve as a modular base for 
 continuing work on the project and as well as keeping the flexibility that is
 a requirement for this project.
+
+Update:
+
+Steps 4-16 of JP instructions
+As of October 31, 2018, 
