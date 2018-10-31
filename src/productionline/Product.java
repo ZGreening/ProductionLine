@@ -8,10 +8,9 @@
 
 package productionline;
 
-import java.util.Comparator;
 import java.util.Date;
 
-public abstract class Product implements Item {
+public abstract class Product implements Item, Comparable<Product> {
 
   private static int currentProductionNumber;         //The number of the next product to be made
   private final Date manufacturedOn;
@@ -74,5 +73,10 @@ public abstract class Product implements Item {
         + "Serial Number : " + serialNumber + "\n"
         + "Date : " + manufacturedOn + "\n"
         + "Name : " + name;
+  }
+
+  @Override
+  public int compareTo(Product product1) {
+    return name.compareTo(product1.name);
   }
 }

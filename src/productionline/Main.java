@@ -10,11 +10,8 @@ package productionline;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
-import java.util.Comparator;
-import javafx.application.Application;
-import javafx.stage.Stage;
 
-public class Main extends Application {
+public class Main {
 
   /**
    * Production line driver class main.
@@ -27,14 +24,13 @@ public class Main extends Application {
     arrayList = testCollection();
 
     print(arrayList);
-    Collections.sort(arrayList, Comparator.comparing(Product::getName));
+    Collections.sort(arrayList);
     print(arrayList);
 
     //productionline.AudioPlayerDriver.testAudioPlayer();
     //productionline.ScreenDriver.testScreen();
     //productionline.MoviePlayerDriver.testMoviePlayer();
     //productionline.MultimediaControlDriver.testMultimediaControlArray();
-    //launch(args);
   }
 
   /**
@@ -70,9 +66,5 @@ public class Main extends Application {
     for (T product : collection) {
       System.out.println(product);
     }
-  }
-
-  @Override
-  public void start(Stage primaryStage) throws Exception {
   }
 }
