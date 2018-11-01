@@ -8,6 +8,7 @@
 
 package productionline;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 public abstract class Product implements Item, Comparable<Product> {
@@ -36,6 +37,26 @@ public abstract class Product implements Item, Comparable<Product> {
 
   public static void setProductionNumber(int number) {
     Product.currentProductionNumber = number;
+  }
+
+  /*
+  Create a static method called printType in Product that will iterate through your
+  Collection and print all the classes of a particular type.
+  Example – print only AudioPlayer classes in the collection.
+  For an extra bonus you could modify it so that it would accept the Class that you want
+  to print in the parameter list. This way we could use it against classes that we have not yet built.
+  Limit the collection to only use subclasses of Product.
+   */
+  public static void printType(ArrayList<Product> arrayList, ItemType type) {
+    for (Product product : arrayList) {
+      if (product instanceof AudioPlayer && type == ItemType.AUDIO) {
+        System.out.println(product);
+      } else if (product instanceof MoviePlayer && type == ItemType.VISUAL) {
+        System.out.println(product);
+      } else {
+        System.out.println("Invalid type or product");
+      }
+    }
   }
 
   public String getName() {
