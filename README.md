@@ -1,7 +1,10 @@
 # ProductionLine --Beta 1
-# September 28, 2018
-# Updated October 32, 2018
-# By Zachary Greening
+September 28, 2018
+=
+Updated October 32, 2018
+=
+By Zachary Greening
+=
 
 This project comes from the Oracle Academy and is for educational purposes.
 It was written using Google style java formatting in the intellij IDEA IDE.
