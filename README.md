@@ -1,10 +1,8 @@
 # ProductionLine --Beta 1
-September 28, 2018
-=
-Updated October 32, 2018
-=
-By Zachary Greening
-=
+# September 28, 2018
+# Updated October 32, 2018
+# By Zachary Greening
+
 
 This project comes from the Oracle Academy and is for educational purposes.
 It was written using Google style java formatting in the intellij IDEA IDE.
@@ -28,8 +26,7 @@ documented, and added to the project. These will serve as a modular base for
 continuing work on the project and as well as keeping the flexibility that is
 a requirement for this project.
 
-Update:
-=
+# Update:
 
 Steps 4-16 of JP instructions
 As of October 31, 2018, the interface "MultimediaControl" was added defining controls used by
@@ -57,6 +54,6 @@ well as, a function to print all the objects of a collection. For deomostration,
 the array list of sample products, prints them, sorts them, then prints them again after they have been
 sorted.
 
-Todo:
+# Todo:
 
 Steps 17-23 of the JP instructions
