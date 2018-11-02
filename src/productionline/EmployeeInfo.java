@@ -16,7 +16,7 @@ public class EmployeeInfo {
   String code;
 
   public EmployeeInfo() {
-    name = new StringBuilder(inputName());
+    setName();
     createEmployeeCode(name);
   }
 
@@ -24,8 +24,8 @@ public class EmployeeInfo {
     return name;
   }
 
-  public void setName(StringBuilder name) {
-    this.name = name;
+  public void setName() {
+    name = new StringBuilder(inputName());
   }
 
   public String getCode() {
@@ -39,24 +39,20 @@ public class EmployeeInfo {
    * @return returns the full string entered by user
    */
   public String inputName() {
-    String fullName;
-
-    System.out.println("Enter First and Last Name: ");
+    System.out.println("Please enter your first and last name: ");
     Scanner scanner = new Scanner(System.in);
 
-    fullName = scanner.nextLine();
-
-    return fullName;
+    return scanner.nextLine();
   }
 
   /**
-   * Checks whether or not the StringBuilder passed contains a space.
+   * Checks whether or not the StringBuilder parameter contains a space.
    *
    * @param name StringBuilder to be checked
    * @return returns true if it has a space, false otherwise.
    */
   public boolean checkName(StringBuilder name) {
-    return name.lastIndexOf(" ") >= 0;
+    return name.indexOf(" ") >= 0;
   }
 
   /**
@@ -69,7 +65,7 @@ public class EmployeeInfo {
     StringBuilder stringBuilder = new StringBuilder();
     if (checkName(name)) {
       stringBuilder.append(name.charAt(0));
-      stringBuilder.append(name.substring(name.indexOf(" ")+1));
+      stringBuilder.append(name.substring(name.indexOf(" ") + 1));
       code = stringBuilder.toString();
     } else {
       code = "guest";
