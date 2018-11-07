@@ -28,7 +28,7 @@ public class Main {
     print(arrayList);
 
     EmployeeInfo employee = new EmployeeInfo();
-    System.out.println(employee.getCode());
+    System.out.println(employee);
 
     //productionline.AudioPlayerDriver.testAudioPlayer();
     //productionline.ScreenDriver.testScreen();
