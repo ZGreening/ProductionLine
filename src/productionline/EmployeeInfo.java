@@ -102,6 +102,7 @@ public class EmployeeInfo {
     return name;
   }
 
+  //Public Methods
   /**
    * A recursive method that reverses a string "id" passed to it. It takes the first char off of the
    * string and appends it to the end of the remaining string. It then calls recursively with that
@@ -119,7 +120,6 @@ public class EmployeeInfo {
     }
   }
 
-  //Public Methods
   public StringBuilder getName() {
     return name;
   }
