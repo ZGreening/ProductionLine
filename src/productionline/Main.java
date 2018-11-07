@@ -29,6 +29,7 @@ public class Main {
 
     EmployeeInfo employee = new EmployeeInfo();
     System.out.println(employee);
+    System.out.println(employee.reverseString("abcde"));
 
     //productionline.AudioPlayerDriver.testAudioPlayer();
     //productionline.ScreenDriver.testScreen();

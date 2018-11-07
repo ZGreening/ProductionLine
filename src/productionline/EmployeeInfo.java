@@ -102,6 +102,23 @@ public class EmployeeInfo {
     return name;
   }
 
+  /**
+   * A recursive method that reverses a string "id" passed to it. It takes the first char off of the
+   * string and appends it to the end of the remaining string. It then calls recursively with that
+   * substring.
+   *
+   * @param id the string to be reveresed
+   * @return after recursion, the reversed string is returned.
+   */
+  public String reverseString(String id) {
+    if (id.length() <= 1) {
+      return id; //last char
+    } else {
+      return reverseString(id.substring(1)) + id
+          .charAt(0); //substring after first char + first char
+    }
+  }
+
   //Public Methods
   public StringBuilder getName() {
     return name;
