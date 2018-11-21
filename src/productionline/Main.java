@@ -10,9 +10,12 @@ package productionline;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Collections;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
-public class Main {
+public class Main extends Application {
 
   /**
    * Production line driver class main.
@@ -20,6 +23,7 @@ public class Main {
    * @param args String arguments
    */
   public static void main(String[] args) {
+    /*
     ArrayList<Product> arrayList;
 
     arrayList = testCollection();
@@ -42,11 +46,21 @@ public class Main {
 
     ViewFileInfo viewFileInfo = new ViewFileInfo();
     viewFileInfo.readFile();
+    */
 
     //productionline.AudioPlayerDriver.testAudioPlayer();
     //productionline.ScreenDriver.testScreen();
     //productionline.MoviePlayerDriver.testMoviePlayer();
     //productionline.MultimediaControlDriver.testMultimediaControlArray();
+    launch(args);
+  }
+
+  @Override
+  public void start(Stage primaryStage) throws IOException {
+    Scene scene = new Scene(FXMLLoader.load(getClass().getResource("MainScreen.fxml")));
+    primaryStage.show();
+    primaryStage.setTitle("Production Line");
+    primaryStage.setScene(scene);
   }
 
   /**
