@@ -7,6 +7,7 @@
 
 package productionline;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -23,13 +24,18 @@ public class Main {
 
     arrayList = testCollection();
 
-    print(arrayList);
     Collections.sort(arrayList);
-    print(arrayList);
 
     EmployeeInfo employee = new EmployeeInfo();
-    System.out.println(employee);
-    System.out.println(employee.reverseString("abcde"));
+
+    ProcessFiles processFiles = new ProcessFiles();
+    try {
+      processFiles.writeFile(employee);
+      processFiles.writeFile(testCollection());
+    } catch (IOException exception) {
+      System.out.println("Unable to write to file");
+      exception.printStackTrace();
+    }
 
     //productionline.AudioPlayerDriver.testAudioPlayer();
     //productionline.ScreenDriver.testScreen();

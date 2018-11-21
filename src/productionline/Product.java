@@ -39,16 +39,14 @@ public abstract class Product implements Item, Comparable<Product> {
     Product.currentProductionNumber = number;
   }
 
-  /*
-  Create a static method called printType in Product that will iterate through your
-  Collection and print all the classes of a particular type.
-  Example – print only AudioPlayer classes in the collection.
-  For an extra bonus you could modify it so that it would accept the Class that you want
-  to print in the parameter list. This way we could use it against classes that we have not yet built.
-  Limit the collection to only use subclasses of Product.
+  /**
+   * A method to print all items of a given ItemType in an ArrayList of Products.
+   *
+   * @param products The list of items to print from.
+   * @param type The type of item to search for and print
    */
-  public static void printType(ArrayList<Product> arrayList, ItemType type) {
-    for (Product product : arrayList) {
+  public static void printType(ArrayList<Product> products, ItemType type) {
+    for (Product product : products) {
       if (product instanceof AudioPlayer && type == ItemType.AUDIO) {
         System.out.println(product);
       } else if (product instanceof MoviePlayer && type == ItemType.VISUAL) {

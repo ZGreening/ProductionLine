@@ -26,7 +26,7 @@ public class EmployeeInfo {
    * user.
    */
   public EmployeeInfo() {
-    this.in = new Scanner(System.in);
+    this.in = new Scanner(System.in, "UTF-8");
     this.pattern = Pattern.compile("[A-Z][a-z]{3}[0-9]{2}");
 
     setName();
@@ -59,7 +59,6 @@ public class EmployeeInfo {
   }
 
   private boolean validId(String id) {
-    System.out.println(Pattern.matches(pattern.pattern(), id));
     return Pattern.matches(pattern.pattern(), id);
   }
 
@@ -103,6 +102,7 @@ public class EmployeeInfo {
   }
 
   //Public Methods
+
   /**
    * A recursive method that reverses a string "id" passed to it. It takes the first char off of the
    * string and appends it to the end of the remaining string. It then calls recursively with that
