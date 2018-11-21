@@ -29,6 +29,7 @@ public class Main {
     EmployeeInfo employee = new EmployeeInfo();
 
     ProcessFiles processFiles = new ProcessFiles();
+
     try {
       processFiles.writeFile(employee);
       processFiles.writeFile(testCollection());
@@ -36,6 +37,11 @@ public class Main {
       System.out.println("Unable to write to file");
       exception.printStackTrace();
     }
+
+    System.out.println();   //Empty line
+
+    ViewFileInfo viewFileInfo = new ViewFileInfo();
+    viewFileInfo.readFile();
 
     //productionline.AudioPlayerDriver.testAudioPlayer();
     //productionline.ScreenDriver.testScreen();
