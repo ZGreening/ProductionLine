@@ -1,7 +1,6 @@
 # ProductionLine
 ### September 28, 2018
 ### Updated November 22, 2018
-### By Zachary Greening
 
 This project comes from the Oracle Academy and is for educational purposes.
 It was written using Google style java formatting in the intellij IDEA IDE.
