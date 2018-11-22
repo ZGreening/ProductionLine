@@ -47,38 +47,38 @@
         <AnchorPane GridPane.columnIndex="2" prefHeight="200.0" prefWidth="200.0">
           <children>
             <TextField AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="5.0"
-              AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="40.0" layoutX="-27.0"
-              layoutY="37.0" promptText="Product Name" fx:id="productName"/>
+              AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="40.0" focusTraversable="false"
+              layoutX="-27.0" layoutY="37.0" promptText="Product Name" fx:id="productName"/>
           </children>
         </AnchorPane>
         <AnchorPane GridPane.columnIndex="3" prefHeight="200.0" prefWidth="200.0">
           <children>
             <TextField AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="5.0"
-              AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="40.0" layoutX="-22.0"
-              layoutY="31.0" promptText="Resolution" fx:id="resolution"/>
+              AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="40.0" focusTraversable="false"
+              layoutX="-22.0" layoutY="31.0" promptText="Resolution" fx:id="resolution"/>
           </children>
         </AnchorPane>
         <AnchorPane GridPane.rowIndex="1" prefHeight="200.0" prefWidth="200.0">
           <children>
             <TextField AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="5.0"
-              AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="40.0" layoutX="-16.0"
-              layoutY="37.0" promptText="Refresh Rate" fx:id="refreshRate"/>
+              AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="40.0" focusTraversable="false"
+              layoutX="-16.0" layoutY="37.0" promptText="Refresh Rate" fx:id="refreshRate"/>
           </children>
         </AnchorPane>
         <AnchorPane GridPane.columnIndex="1" GridPane.rowIndex="1" prefHeight="200.0"
           prefWidth="200.0">
           <children>
             <TextField AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="5.0"
-              AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="40.0" layoutX="-19.0"
-              layoutY="50.0" promptText="Response Time" fx:id="responseTime"/>
+              AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="40.0" focusTraversable="false"
+              layoutX="-19.0" layoutY="50.0" promptText="Response Time" fx:id="responseTime"/>
           </children>
         </AnchorPane>
         <AnchorPane GridPane.columnIndex="2" GridPane.rowIndex="1" prefHeight="200.0"
           prefWidth="200.0">
           <children>
             <TextField AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="5.0"
-              AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="40.0" layoutX="-33.0"
-              layoutY="23.0" promptText="Monitor Type" fx:id="monitorType"/>
+              AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="40.0" focusTraversable="false"
+              layoutX="-33.0" layoutY="23.0" promptText="Monitor Type" fx:id="monitorType"/>
           </children>
         </AnchorPane>
         <AnchorPane GridPane.columnIndex="3" GridPane.rowIndex="1" prefHeight="200.0"
@@ -98,15 +98,16 @@
                 <AnchorPane prefHeight="200.0" prefWidth="200.0">
                   <children>
                     <TextField AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="5.0"
-                      AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="10.0" promptText="Quantity"
-                      fx:id="quantity"/>
+                      AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="10.0"
+                      focusTraversable="false" promptText="Quantity" fx:id="quantity"/>
                   </children>
                 </AnchorPane>
                 <AnchorPane GridPane.rowIndex="1" prefHeight="200.0" prefWidth="200.0">
                   <children>
                     <Button AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0"
                       AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0"
-                      mnemonicParsing="false" onAction="#onCreatePressed" text="Create"/>
+                      focusTraversable="false" mnemonicParsing="false" onAction="#onCreatePressed"
+                      text="Create"/>
                   </children>
                 </AnchorPane>
               </children>

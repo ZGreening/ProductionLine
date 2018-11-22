@@ -71,8 +71,9 @@
           prefWidth="200.0">
           <children>
             <Button AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0"
-              AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" layoutX="34.0"
-              layoutY="22.0" mnemonicParsing="false" onAction="#onCreatePressed" text="Create"/>
+              AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" focusTraversable="false"
+              layoutX="34.0" layoutY="22.0" mnemonicParsing="false" onAction="#onCreatePressed"
+              text="Create"/>
           </children>
         </AnchorPane>
       </children>

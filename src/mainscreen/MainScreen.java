@@ -45,13 +45,11 @@ public class MainScreen {
       exception.printStackTrace();
     }
 
+    //Clear screen
+    output.getChildren().clear();
+
     //Print number of products created
     output((Main.getProductsList().size() - productBeforeAddition) + " products created.");
-
-    //This was given as a way of making sure scrollpane would set its v-value properly
-    scrollPane.applyCss();
-    scrollPane.layout();
-    scrollPane.setVvalue(1.0);
   }
 
   private void output(String text) {
@@ -108,19 +106,23 @@ public class MainScreen {
     int numOfMoviePlayers = 0;
 
     for (Product product : products) {
+      //Count number of each type of product
       if (product instanceof MoviePlayer) {
         numOfMoviePlayers++;
       } else if (product instanceof AudioPlayer) {
         numOfAudioPlayers++;
       }
 
+      //If product name already exists, it is not a unique product
       if (!uniqueProducts.contains(product.getName())) {
         uniqueProducts.add(product.getName());
       }
     }
 
+    //Clear screen
     output.getChildren().clear();
 
+    //Display statistics
     output("Total number of items produced: " + products.size());
     output("Number of movie players: " + numOfMoviePlayers);
     output("Number of audio players: " + numOfAudioPlayers);
