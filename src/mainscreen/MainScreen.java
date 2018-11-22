@@ -45,6 +45,7 @@ public class MainScreen {
       exception.printStackTrace();
     }
 
+    //Print number of products created
     output((Main.getProductsList().size() - productBeforeAddition) + " products created.");
 
     //This was given as a way of making sure scrollpane would set its v-value properly
@@ -61,7 +62,7 @@ public class MainScreen {
 
   @FXML
   void onCreateNewMoviePlayerPressed(ActionEvent event) {
-
+    openWindow("movieplayercreator/MoviePlayerCreator.fxml");
   }
 
   @FXML
