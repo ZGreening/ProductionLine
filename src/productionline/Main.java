@@ -25,35 +25,6 @@ public class Main extends Application {
    * @param args String arguments
    */
   public static void main(String[] args) {
-    /*
-    ArrayList<Product> arrayList;
-
-    arrayList = testCollection();
-
-    Collections.sort(arrayList);
-
-    EmployeeInfo employee = new EmployeeInfo();
-
-    ProcessFiles processFiles = new ProcessFiles();
-
-    try {
-      processFiles.writeFile(employee);
-      processFiles.writeFile(testCollection());
-    } catch (IOException exception) {
-      System.out.println("Unable to write to file");
-      exception.printStackTrace();
-    }
-
-    System.out.println();   //Empty line
-
-    ViewFileInfo viewFileInfo = new ViewFileInfo();
-    viewFileInfo.readFile();
-    */
-
-    //productionline.AudioPlayerDriver.testAudioPlayer();
-    //productionline.ScreenDriver.testScreen();
-    //productionline.MoviePlayerDriver.testMoviePlayer();
-    //productionline.MultimediaControlDriver.testMultimediaControlArray();
     launch(args);
   }
 
