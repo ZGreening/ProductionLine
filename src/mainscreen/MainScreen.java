@@ -79,7 +79,7 @@ public class MainScreen {
     output.getChildren().clear();
 
     if (products.isEmpty()) {
-      output("No products created yet");
+      output("No products created yet.");
     } else {
       //Add an entry to output for each product
       for (Product product : products) {
