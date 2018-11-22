@@ -19,6 +19,9 @@ This structure would then allow easy modification to handle different products.
 
 ## Getting Started
 
+
+### Installation
+
   Clone repository from github.
   
 ### Prerequisites
