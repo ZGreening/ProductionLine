@@ -50,6 +50,7 @@ public class AudioPlayerCreator {
       for (int iii = 0; iii < quantity; iii++) {
         AudioPlayer audioPlayer = new AudioPlayer(name, specification);
         Main.addProduct(audioPlayer);
+        Main.addToNumberOfUniqueProducts();
       }
 
       Stage stage = (Stage) root.getScene().getWindow();

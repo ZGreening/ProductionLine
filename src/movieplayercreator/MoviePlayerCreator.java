@@ -101,7 +101,9 @@ public class MoviePlayerCreator {
       for (int iii = 0; iii < quantity; iii++) {
         MoviePlayer moviePlayer = new MoviePlayer(name,
             new Screen(resolution, refreshRate, responseTime), type);
+
         Main.addProduct(moviePlayer);
+        Main.addToNumberOfUniqueProducts();
       }
 
       //Close Window

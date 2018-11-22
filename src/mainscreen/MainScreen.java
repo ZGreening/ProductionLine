@@ -94,15 +94,15 @@ public class MainScreen {
 
   /**
    * Displays the total number of products created, the total number of each type of product, and
-   * the total number of unique products. Unique products are determined to be uniques based on
-   * their name.
+   * the total number of unique products. A product is considered unique product if it required
+   * opening a new "Creator" window to create. If it was created because the quantity to make was
+   * greater than one than it is not unique but a copy of the original.
    *
    * @param event Event passed from the button pressed
    */
   @FXML
   void onDisplayProductStatisticsPressed(ActionEvent event) {
     ArrayList<Product> products = Main.getProductsList();
-    ArrayList<String> uniqueProducts = new ArrayList<>();
     int numOfAudioPlayers = 0;
     int numOfMoviePlayers = 0;
 
@@ -113,11 +113,6 @@ public class MainScreen {
       } else if (product instanceof AudioPlayer) {
         numOfAudioPlayers++;
       }
-
-      //If product name already exists, it is not a unique product
-      if (!uniqueProducts.contains(product.getName())) {
-        uniqueProducts.add(product.getName());
-      }
     }
 
     //Clear screen
@@ -127,6 +122,6 @@ public class MainScreen {
     output("Total number of items produced: " + products.size());
     output("Number of movie players: " + numOfMoviePlayers);
     output("Number of audio players: " + numOfAudioPlayers);
-    output("Number of unique products: " + uniqueProducts.size());
+    output("Number of unique products: " + Main.getNumberOfUniqueProducts());
   }
 }

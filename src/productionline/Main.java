@@ -18,6 +18,7 @@ import javafx.stage.Stage;
 public class Main extends Application {
 
   private static ArrayList<Product> products = new ArrayList<>();
+  private static int numberOfUniqueProducts = 0;
 
   /**
    * Production line driver class main.
@@ -34,6 +35,14 @@ public class Main extends Application {
 
   public static void addProduct(Product product) {
     products.add(product);
+  }
+
+  public static void addToNumberOfUniqueProducts() {
+    numberOfUniqueProducts++;
+  }
+
+  public static int getNumberOfUniqueProducts() {
+    return numberOfUniqueProducts;
   }
 
   @Override
