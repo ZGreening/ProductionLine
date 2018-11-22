@@ -50,6 +50,7 @@ public class MainScreen {
 
     //Print number of products created
     output((Main.getProductsList().size() - productBeforeAddition) + " products created.");
+    output("Total products created: " + Main.getProductsList().size());
   }
 
   private void output(String text) {
