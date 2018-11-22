@@ -95,7 +95,7 @@ public abstract class Product implements Item, Comparable<Product> {
   }
 
   @Override
-  public int compareTo(Product product1) {
-    return name.compareTo(product1.name);
+  public int compareTo(Product product) {
+    return name.compareTo(product.name);
   }
 }
