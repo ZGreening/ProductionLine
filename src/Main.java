@@ -5,8 +5,6 @@
 // Description: The driver class for Production Line application
 ///////////////////////////////////////////////////////////////////////////////
 
-package productionline;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -14,6 +12,11 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import productionline.AudioPlayer;
+import productionline.MonitorType;
+import productionline.MoviePlayer;
+import productionline.Product;
+import productionline.Screen;
 
 public class Main extends Application {
 
@@ -57,10 +60,12 @@ public class Main extends Application {
 
   @Override
   public void start(Stage primaryStage) throws IOException {
-    Scene scene = new Scene(FXMLLoader.load(getClass().getResource("MainScreen.fxml")));
-    primaryStage.show();
+    Scene scene = new Scene(
+        FXMLLoader.load(getClass().getClassLoader().getResource("mainscreen/MainScreen.fxml")));
     primaryStage.setTitle("Production Line");
     primaryStage.setScene(scene);
+    primaryStage.centerOnScreen();
+    primaryStage.show();
   }
 
   /**

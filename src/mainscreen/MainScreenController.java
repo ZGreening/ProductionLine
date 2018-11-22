@@ -5,13 +5,17 @@
 // Description: The Controller class for the MainScreen.fxml file
 ///////////////////////////////////////////////////////////////////////////////
 
-package productionline;
+package mainscreen;
 
 import java.util.ArrayList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
+import productionline.Product;
 
 public class MainScreenController {
 
@@ -29,11 +33,27 @@ public class MainScreenController {
   @FXML
   private Label output;
 
-  @FXML
-  private TextField quantity;
+  private void openWindow(String window) {
+    try {
+      Stage stage = new Stage();
+      Scene scene = new Scene(FXMLLoader.load(getClass().getClassLoader().getResource(window)));
+      stage.setTitle("Production Line");
+      stage.setScene(scene);
+      stage.initModality(Modality.APPLICATION_MODAL);
+      stage.show();
+    } catch (Exception exception) {
+      System.out.println("Unable to open " + window);
+      exception.printStackTrace();
+    }
+  }
 
   @FXML
-  void onAddProductPressed(ActionEvent event) {
+  void onCreateNewMoviePlayerPressed(ActionEvent event) {
+
+  }
+
+  @FXML
+  void onCreateNewAudioPlayerPressed(ActionEvent event) {
 
   }
 
