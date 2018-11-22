@@ -1,9 +1,11 @@
 ///////////////////////////////////////////////////////////////////////////////
-// File: Main.java
+// File: productionline.Main.java
 // By:   Greening, Zachary
 // Date: October 12, 2018
 // Description: The driver class for Production Line application
 ///////////////////////////////////////////////////////////////////////////////
+
+package productionline;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -12,13 +14,10 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import productionline.AudioPlayer;
-import productionline.MonitorType;
-import productionline.MoviePlayer;
-import productionline.Product;
-import productionline.Screen;
 
 public class Main extends Application {
+
+  private static ArrayList<Product> products = new ArrayList<>();
 
   /**
    * Production line driver class main.
@@ -56,6 +55,14 @@ public class Main extends Application {
     //productionline.MoviePlayerDriver.testMoviePlayer();
     //productionline.MultimediaControlDriver.testMultimediaControlArray();
     launch(args);
+  }
+
+  public static ArrayList<Product> getProductsList() {
+    return products;
+  }
+
+  public static void addProduct(Product product) {
+    products.add(product);
   }
 
   @Override

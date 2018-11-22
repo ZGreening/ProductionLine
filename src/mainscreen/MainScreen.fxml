@@ -7,11 +7,12 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <AnchorPane xmlns:fx="http://javafx.com/fxml/1" style="-fx-background-color: grey;"
   maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
   prefHeight="800.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171"
-  fx:controller="mainscreen.MainScreenController">
+  fx:controller="mainscreen.MainScreen">
   <children>
     <GridPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
       AnchorPane.topAnchor="0.0">
@@ -45,9 +46,9 @@
           <children>
             <ScrollPane AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0"
               AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" hbarPolicy="NEVER"
-              prefHeight="200.0" prefWidth="200.0">
+              prefHeight="200.0" prefWidth="200.0" fx:id="scrollPane">
               <content>
-                <Label fx:id="output"/>
+                <VBox fx:id="output"/>
               </content>
             </ScrollPane>
           </children>

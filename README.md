@@ -49,8 +49,8 @@ MultimediaControl array, and iterates through each item, demonstrating the use o
 functions. 
 
 Functionality was added to the "Product" class to allow products to be sorted by name.
-In the Main class driver, a function for creating an ArrayList of sample products was added. As
-well as, a function to print all the objects of a collection. For deomostration, the Main class gets
+In the productionline.Main class driver, a function for creating an ArrayList of sample products was added. As
+well as, a function to print all the objects of a collection. For deomostration, the productionline.Main class gets
 the array list of sample products, prints them, sorts them, then prints them again after they have been
 sorted.
 
