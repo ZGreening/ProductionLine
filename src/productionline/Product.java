@@ -31,8 +31,12 @@ public abstract class Product implements Item, Comparable<Product> {
     this.name = name;
     this.manufacturer = Item.manufacturer;
     this.serialNumber = currentProductionNumber;   //Use the number of current product
-    Product.currentProductionNumber++;             //Increment class variable for next product
+    incrementProductionNum();                      //Increment class variable for next product
     this.manufacturedOn = new Date();
+  }
+
+  private void incrementProductionNum() {
+    Product.currentProductionNumber++;
   }
 
   public static void setProductionNumber(int number) {
