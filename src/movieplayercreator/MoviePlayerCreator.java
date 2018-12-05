@@ -103,7 +103,6 @@ public class MoviePlayerCreator {
             new Screen(resolution, refreshRate, responseTime), type);
 
         Main.addProduct(moviePlayer);
-        Main.addToNumberOfUniqueProducts();
       }
 
       //Close Window

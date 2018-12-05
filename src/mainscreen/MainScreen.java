@@ -105,6 +105,7 @@ public class MainScreen {
     ArrayList<Product> products = Main.getProductsList();
     int numOfAudioPlayers = 0;
     int numOfMoviePlayers = 0;
+    ArrayList<String> uniqueNames = new ArrayList<>(); //Size of uniqueNames is how many unique products
 
     for (Product product : products) {
       //Count number of each type of product
@@ -112,6 +113,10 @@ public class MainScreen {
         numOfMoviePlayers++;
       } else if (product instanceof AudioPlayer) {
         numOfAudioPlayers++;
+      }
+
+      if (!uniqueNames.contains(product.getName())) {
+        uniqueNames.add(product.getName());
       }
     }
 
@@ -122,6 +127,6 @@ public class MainScreen {
     output("Total number of items produced: " + products.size());
     output("Number of movie players: " + numOfMoviePlayers);
     output("Number of audio players: " + numOfAudioPlayers);
-    output("Number of unique products: " + Main.getNumberOfUniqueProducts());
+    output("Number of unique products: " + uniqueNames.size());
   }
 }
