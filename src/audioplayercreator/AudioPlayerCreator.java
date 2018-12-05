@@ -1,3 +1,12 @@
+///////////////////////////////////////////////////////////////////////////////
+// File: AudioPlayerCreator.java
+// By:   Greening, Zachary
+// Date: December 5, 2018
+// Description: A controller class for the screen AudioPlayerCreator.
+//    AudioPlayerCreator is a UI for filling in information and creating an
+//    audio player.
+///////////////////////////////////////////////////////////////////////////////
+
 package audioplayercreator;
 
 import javafx.event.ActionEvent;
