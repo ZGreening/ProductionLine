@@ -49,13 +49,14 @@ ScreenDriver.testScreen() --Creates a screen prints it to the console and tests 
 
 ## Class Diagram
 
-https://github.com/zgreening/ProductionLine/blob/master/Class%20Diagrams/Package%20productionline%20Class%20Diagram.png
+![Package productionline Class Diagram](https://github.com/zgreening/ProductionLine/blob/master/Class%20Diagrams/Package%20productionline%20Class%20Diagram.png)
 
-https://github.com/zgreening/ProductionLine/blob/master/Class%20Diagrams/Package%20audioplayercreator%20Class%20Diagram.png
+![Package audioplayercreator Class Diagram](https://github.com/zgreening/ProductionLine/blob/master/Class%20Diagrams/Package%20audioplayercreator%20Class%20Diagram.png)
 
-https://github.com/zgreening/ProductionLine/blob/master/Class%20Diagrams/Package%20mainscreen%20Class%20Diagram.png
+![Package movieplayercreator Class Diagram](https://github.com/zgreening/ProductionLine/blob/master/Class%20Diagrams/Package%20movieplayercreator%20Class%20Diagram.png)
 
-https://github.com/zgreening/ProductionLine/blob/master/Class%20Diagrams/Package%20movieplayercreator%20Class%20Diagram.png
+![Package mainscreen Class Diagram](https://github.com/zgreening/ProductionLine/blob/master/Class%20Diagrams/Package%20mainscreen%20Class%20Diagram.png)
+
 
 ## Built With
 
