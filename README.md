@@ -47,6 +47,16 @@ MultimediaControlDriver.testMultimediaControlArray() --Creates an array of a Mov
 
 ScreenDriver.testScreen() --Creates a screen prints it to the console and tests its get methods.
 
+## Class Diagram
+
+https://github.com/zgreening/ProductionLine/blob/master/Class%20Diagrams/Package%20productionline%20Class%20Diagram.png
+
+https://github.com/zgreening/ProductionLine/blob/master/Class%20Diagrams/Package%20audioplayercreator%20Class%20Diagram.png
+
+https://github.com/zgreening/ProductionLine/blob/master/Class%20Diagrams/Package%20mainscreen%20Class%20Diagram.png
+
+https://github.com/zgreening/ProductionLine/blob/master/Class%20Diagrams/Package%20movieplayercreator%20Class%20Diagram.png
+
 ## Built With
 
 * [Scenebuilder](https://gluonhq.com/products/scene-builder/) - FXML Editor
